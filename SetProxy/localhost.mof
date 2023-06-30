@@ -1,0 +1,42 @@
+/*
+@TargetNode='localhost'
+@GeneratedBy=weral
+@GenerationDate=06/30/2023 10:13:49
+@GenerationHost=ZA-WERAL1777
+*/
+
+instance of MSFT_RegistryResource as $MSFT_RegistryResource1ref
+{
+Ensure = "Present";
+ Force = True;
+ ValueType = "String";
+ ModuleName = "PsDesiredStateConfiguration";
+ ValueName = "ProxyServer";
+ ValueData = {
+    "http://proxy.example.com:8080"
+};
+ SourceInfo = "C:\\Temp\\GuestConfigurationExamples\\SetProxy.ps1::5::9::Registry";
+ Key = "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings";
+ ResourceID = "[Registry]SetProxy";
+
+ModuleVersion = "1.0";
+ ConfigurationName = "SetProxy";
+};
+instance of OMI_ConfigurationDocument
+
+                    {
+ Version="2.0.0";
+
+                        MinimumCompatibleVersion = "1.0.0";
+
+                        CompatibleVersionAdditionalProperties= {"Omi_BaseResource:ConfigurationName"};
+
+                        Author="weral";
+
+                        GenerationDate="06/30/2023 10:13:49";
+
+                        GenerationHost="ZA-WERAL1777";
+
+                        Name="SetProxy";
+
+                    };

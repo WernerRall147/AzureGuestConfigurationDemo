@@ -1,0 +1,36 @@
+/*
+@TargetNode='localhost'
+@GeneratedBy=weral
+@GenerationDate=06/30/2023 10:11:37
+@GenerationHost=ZA-WERAL1777
+*/
+
+instance of MSFT_RoleResource as $MSFT_RoleResource1ref
+{
+Ensure = "Present";
+ Name = "Web-Server";
+ ModuleName = "PsDesiredStateConfiguration";
+ SourceInfo = "C:\\Temp\\GuestConfigurationExamples\\WindowsIIS.ps1::8::1::WindowsFeature";
+ ResourceID = "[WindowsFeature]IIS";
+
+ModuleVersion = "1.0";
+ ConfigurationName = "WindowsIIS";
+};
+instance of OMI_ConfigurationDocument
+
+                    {
+ Version="2.0.0";
+
+                        MinimumCompatibleVersion = "1.0.0";
+
+                        CompatibleVersionAdditionalProperties= {"Omi_BaseResource:ConfigurationName"};
+
+                        Author="weral";
+
+                        GenerationDate="06/30/2023 10:11:37";
+
+                        GenerationHost="ZA-WERAL1777";
+
+                        Name="WindowsIIS";
+
+                    };
