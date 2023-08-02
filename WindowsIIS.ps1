@@ -1,11 +1,11 @@
 Configuration WindowsIIS{
 
-Import-Module -Name PSDesiredStateConfiguration
+Import-DscResource -ModuleName PSDscResources
 
 Node localhost {
 
 #Helps to install IIS
-WindowsFeature IIS {
+WindowsFeature IIS{
     Ensure = "Present"
     Name = "Web-Server"
     }

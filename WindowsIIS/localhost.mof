@@ -1,19 +1,18 @@
 /*
 @TargetNode='localhost'
 @GeneratedBy=weral
-@GenerationDate=06/30/2023 10:11:37
+@GenerationDate=08/02/2023 15:23:34
 @GenerationHost=ZA-WERAL1777
 */
 
-instance of MSFT_RoleResource as $MSFT_RoleResource1ref
+instance of MSFT_WindowsFeature as $MSFT_WindowsFeature1ref
 {
-Ensure = "Present";
- Name = "Web-Server";
- ModuleName = "PsDesiredStateConfiguration";
- SourceInfo = "C:\\Temp\\GuestConfigurationExamples\\WindowsIIS.ps1::8::1::WindowsFeature";
+SourceInfo = "C:\\Users\\weral\\Git\\AzureGuestConfigurationDemo\\WindowsIIS.ps1::8::1::WindowsFeature";
+ ModuleName = "PSDscResources";
+ Ensure = "Present";
  ResourceID = "[WindowsFeature]IIS";
-
-ModuleVersion = "1.0";
+ Name = "Web-Server";
+ ModuleVersion = "2.12.0.0";
  ConfigurationName = "WindowsIIS";
 };
 instance of OMI_ConfigurationDocument
@@ -27,7 +26,7 @@ instance of OMI_ConfigurationDocument
 
                         Author="weral";
 
-                        GenerationDate="06/30/2023 10:11:37";
+                        GenerationDate="08/02/2023 15:23:34";
 
                         GenerationHost="ZA-WERAL1777";
 
